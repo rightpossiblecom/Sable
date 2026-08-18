@@ -1,8 +1,12 @@
-import { Inter } from "next/font/google";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const serif = Source_Serif_4({
+  subsets: ["latin"],
+  variable: "--font-serif",
+});
 
 export const metadata = {
   title: "Sable",
@@ -13,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${inter.variable} ${serif.variable} ${inter.className}`}>
         <main className="min-h-screen">{children}</main>
         <Toaster richColors />
       </body>

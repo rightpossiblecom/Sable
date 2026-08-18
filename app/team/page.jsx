@@ -13,43 +13,40 @@ export const metadata = {
 export default function TeamPage() {
   return (
     <MarketingShell>
-      <section className="bg-gradient-to-br from-blue-50 via-white to-green-50 py-20">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <p className="text-sm font-medium text-blue-700 tracking-wide uppercase mb-4">
-            The team
-          </p>
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-            A house, not a product team
+      <section className="py-20">
+        <div className="mx-auto max-w-4xl px-4 text-center">
+          <p className="text-sm text-neutral-400 mb-4">The team</p>
+          <h1 className="text-5xl md:text-6xl font-semibold tracking-tight">
+            A house,
+            <span className="text-neutral-400"> not a product team</span>
           </h1>
-          <p className="text-xl text-gray-600 leading-relaxed">
-            Sable is run from Lagos, Accra, and Johannesburg. We sit with families who already own land, firms, and a corridor — and we keep the year in one ledger.
+          <p className="mt-6 text-neutral-500 leading-relaxed">
+            Run from Lagos, Accra, and Johannesburg. We sit with families who already own land, firms, and a corridor.
           </p>
         </div>
       </section>
 
-      <section className="py-16">
-        <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <section className="pb-20">
+        <div className="mx-auto max-w-6xl px-4 grid md:grid-cols-3 gap-5">
           {TEAM.map((person) => (
-            <article
-              key={person.name}
-              className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm"
-            >
+            <article key={person.name} className="rounded-[2rem] bg-soft p-7">
               <Image
                 src={person.image}
                 alt={person.name}
-                width={96}
-                height={96}
-                className="rounded-full w-20 h-20 object-cover"
+                width={80}
+                height={80}
+                className="w-16 h-16 rounded-full object-cover"
               />
-              <h2 className="text-2xl font-bold text-gray-900 mt-5">{person.name}</h2>
-              <p className="text-sm font-medium text-blue-600 mt-1">{person.role}</p>
-              <p className="text-sm text-gray-500 mt-1">{person.location}</p>
-              <p className="text-gray-600 leading-relaxed mt-4">{person.bio}</p>
+              <h2 className="text-2xl font-semibold mt-6">{person.name}</h2>
+              <p className="text-sm text-neutral-400 mt-1">
+                {person.role} · {person.location}
+              </p>
+              <p className="text-neutral-500 leading-relaxed mt-4">{person.bio}</p>
               <Link
                 href={person.linkedin}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center text-sm font-medium text-blue-600 mt-5"
+                className="inline-flex items-center text-sm mt-5 font-medium"
               >
                 LinkedIn
                 <ArrowUpRight className="w-4 h-4 ml-1" />

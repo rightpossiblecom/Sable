@@ -11,19 +11,16 @@ export const metadata = {
 
 export default function LoginPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white text-black">
       <Header />
-      <section className="pt-28 pb-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
-        <div className="container mx-auto px-4">
-          <div className="max-w-md mx-auto bg-white rounded-2xl border border-gray-200 shadow-xl p-8">
-            <Link
-              href="/"
-              className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent"
-            >
+      <section className="pt-32 pb-20">
+        <div className="mx-auto max-w-md px-4">
+          <div className="rounded-[2rem] bg-soft p-8">
+            <Link href="/" className="text-xl font-semibold">
               Sable
             </Link>
-            <h1 className="text-3xl font-bold text-gray-900 mt-4">Welcome back</h1>
-            <p className="text-gray-600 mt-2 mb-8">
+            <h1 className="text-3xl font-semibold mt-5">Welcome back</h1>
+            <p className="text-neutral-500 mt-2 mb-8">
               Open the books. The house is waiting.
             </p>
             <Suspense>

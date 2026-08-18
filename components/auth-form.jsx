@@ -42,7 +42,7 @@ export default function AuthForm({ mode = "login" }) {
   return (
     <form onSubmit={enter} className="space-y-5">
       <div className="space-y-2">
-        <label htmlFor="email" className="text-sm font-medium text-gray-700">
+        <label htmlFor="email" className="text-sm text-neutral-500">
           Work email
         </label>
         <Input
@@ -55,7 +55,7 @@ export default function AuthForm({ mode = "login" }) {
         />
       </div>
       <div className="space-y-2">
-        <label htmlFor="password" className="text-sm font-medium text-gray-700">
+        <label htmlFor="password" className="text-sm text-neutral-500">
           Password
         </label>
         <Input
@@ -70,7 +70,7 @@ export default function AuthForm({ mode = "login" }) {
       <Button
         type="submit"
         disabled={loading}
-        className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white py-6 rounded-xl"
+        className="w-full bg-black hover:bg-neutral-800 text-white py-6 rounded-full"
       >
         {loading ? (
           <LoaderIcon className="w-4 h-4 animate-spin" />
@@ -84,14 +84,14 @@ export default function AuthForm({ mode = "login" }) {
         {isSignup ? (
           <>
             Already on the house?{" "}
-            <Link href="/login" className="text-blue-600 font-medium hover:underline">
+            <Link href="/login" className="text-ink font-medium underline underline-offset-4">
               Log in
             </Link>
           </>
         ) : (
           <>
             New to Sable?{" "}
-            <Link href="/signup" className="text-blue-600 font-medium hover:underline">
+            <Link href="/signup" className="text-ink font-medium underline underline-offset-4">
               Sign up
             </Link>
           </>

@@ -3,7 +3,7 @@ import SiteFooter from "@/components/site-footer";
 
 export default function MarketingShell({ children }) {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white text-black">
       <Header />
       <div className="pt-20">{children}</div>
       <SiteFooter />

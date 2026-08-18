@@ -12,6 +12,8 @@ Three names considered:
 
 **One line:** Sable is the household ledger for African families and firms — accounts, budgets, and receipts that keep wealth on the continent for the next generation.
 
+Owner override: **redesign marketing only**. Premium FitMe-grade system — white, black, soft gray, mint accents, pill buttons, floating cards, dark cinematic band. Do not redesign the in-app rooms.
+
 ## 2. What `/` is now vs what it should be
 
 `/` is already marketing: blue–green gradient hero, Fortune 500 logo row, four capability cards, SLA stats, three-step framework, three enterprise price cards, purple CTA, dark footer.

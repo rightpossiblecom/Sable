@@ -8,7 +8,20 @@ module.exports = {
   ],
   theme: {
   	extend: {
+  		fontFamily: {
+  			sans: ["var(--font-sans)", "ui-sans-serif", "system-ui"],
+  			serif: ["var(--font-serif)", "Georgia", "serif"],
+  		},
   		colors: {
+  			ivory: "#f3efe6",
+  			paper: "#faf7f1",
+  			ink: "#141a1f",
+  			navy: "#0e1621",
+  			brass: "#9a7b45",
+  			stone: "#6b6458",
+  			soft: "#f4f4f4",
+  			midnight: "#111111",
+  			mint: "#c8f54a",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
