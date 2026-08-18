@@ -21,7 +21,7 @@ function isProtected(pathname) {
   );
 }
 
-export default function middleware(request) {
+export function proxy(request) {
   const { pathname } = request.nextUrl;
   if (!isProtected(pathname)) {
     return NextResponse.next();
